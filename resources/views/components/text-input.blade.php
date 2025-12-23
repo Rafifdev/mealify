@@ -1,3 +1,11 @@
-@props(['disabled' => false])
+@props([
+    'disabled' => false,
+    'placeholder' => '',
+    'name' => '',
+    'value' => '',
+    'type' => 'text',
+])
 
-<input @disabled($disabled) {{ $attributes->merge(['class' => 'block font-medium text-sm text-gray-700 dark:text-gray-300']) }}>
+<input @disabled($disabled) type="{{ $type }}" name="{{ $name }}" value="{{ $value }}"
+    placeholder="{{ $placeholder }}"
+    class='flex h-10 w-full mt-2 rounded-md border border-[#dfdfdf] dark:border-[#525252] bg-[#f5f5f5] dark:bg-backgorund-dark px-3 py-2 text-secondary dark:text-secondary-dark focus:border-[#dfdfdf] dark:focus:border-[#525252] focus-visible:ring-2 focus-visible:ring-primary dark:focus-visible:ring-primary-dark focus-visible:ring-offset-2 dark:focus-visible:ring-offset-backgorund-dark disabled:cursor-not-allowed disabled:opacity-50 md:text-sm placeholder:text-gray-500'>

@@ -1,5 +1,6 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 import forms from "@tailwindcss/forms";
+import plugin from "tailwindcss";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -13,14 +14,19 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: "#ffffff",
-                    light: "#3b82f6",
-                    dark: "#1e40af",
+                    DEFAULT: "#e9560c",
+                    dark: "#f78e37",
                 },
                 secondary: {
-                    DEFAULT: "#16a34a",
-                    light: "#22c55e",
-                    dark: "#15803d",
+                    DEFAULT: "#171717",
+                    btn_light: "#fafafa",
+                    dark: "#fafafa",
+                },
+                backgorund: {
+                    light: "#f4f0ee",
+                    lightv2: "#fafafa",
+                    dark: "#171717",
+                    darkv2: "#242424",
                 },
             },
             fontFamily: {
