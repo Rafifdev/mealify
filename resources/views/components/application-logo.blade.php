@@ -1,4 +1,4 @@
-<div class="bg-primary dark:bg-primary-dark rounded-3xl w-fit ">
+<div>
     <a href="/">
         <svg {{ $attributes }} xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             version="1.1" x="0px" y="0px" viewBox="0 0 44 55" enable-background="new 0 0 44 44" xml:space="preserve">

@@ -14,3 +14,7 @@
     font-family: 'Libre Caslon Text', serif;
   }
 }
+
+@theme {
+  --section: "sm:mx-10 md:mx-16 lg:mx-20"
+}
