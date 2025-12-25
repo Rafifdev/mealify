@@ -18,7 +18,7 @@
 
         {{-- logo --}}
         <div class="flex flex-row items-center justify-center gap-5 my-5">
-            <x-application-logo
+            <x-svg.application-logo
                 class="w-16 h-16 fill-current bg-primary dark:bg-primary-dark text-backgorund-light dark:text-backgorund-dark rounded-3xl" />
 
             {{-- tittle --}}
@@ -37,7 +37,7 @@
         {{-- Navigation return to the hompage --}}
         <div
             class="w-full flex flex-row justify-center gap-2 mb-5 font-bold text-sm text-primary dark:text-primary-dark hover:text-primary dark:hover:text-primary-dark hover:underline underline-offset-4">
-            <x-arrow-left class="w-5" />
+            <x-svg.arrow-left class="w-5" />
             <a href="/">
                 Return to the homepage
             </a>

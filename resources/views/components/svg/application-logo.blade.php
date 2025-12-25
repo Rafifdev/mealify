@@ -1,7 +1,7 @@
-<div>
+<div {{ $attributes->merge(['class' => 'transition-all duration-300']) }}>
     <a href="/">
         <svg {{ $attributes }} xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            version="1.1" x="0px" y="0px" viewBox="0 0 44 55" enable-background="new 0 0 44 44" xml:space="preserve">
+            version="1.1" x="0px" y="0px" viewBox="0 0 44 55" enable-background="new 0 0 44 44" xml:space="preservec" fill="currentColor">
             <path
                 d="M2.761,17.966c0,0,2.406,17.344,11.429,17.344h6.918h6.918c9.022,0,11.429-17.344,11.429-17.344H21.108H2.761z" />
             <path

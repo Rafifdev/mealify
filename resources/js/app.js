@@ -44,3 +44,23 @@ themeToggleBtn.addEventListener("click", function () {
         }
     }
 });
+
+// MOBILE NAVBAR
+let isOpen = false;
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    const iconMenu = document.getElementById("icon-menu");
+    const iconClose = document.getElementById("icon-close");
+
+    if (btn && menu) {
+        btn.addEventListener("click", () => {
+            isOpen = !isOpen;
+
+            iconMenu.classList.toggle("hidden", isOpen);
+            iconClose.classList.toggle("hidden", !isOpen);
+            menu.classList.toggle("hidden");
+        });
+    }
+});

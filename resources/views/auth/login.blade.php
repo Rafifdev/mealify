@@ -3,7 +3,7 @@
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     {{-- Header --}}
-    <x-input-header title=" Welcome Back" text="Sign in to your account to continue" />
+    <x-inputs.input-header title=" Welcome Back" text="Sign in to your account to continue" />
 
     <!-- Navigation -->
     <div
@@ -17,19 +17,19 @@
 
         <!-- Email Address -->
         <div>
-            <x-input-label :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
+            <x-inputs.input-label :value="__('Email')" />
+            <x-inputs.text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
                 autofocus autocomplete="username" placeholder="name@example.com" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2"/>
+            <x-inputs.input-error :messages="$errors->get('email')" class="mt-2"/>
         </div>
 
         <!-- Password -->
         <div>
-            <x-input-label :value="__('Password')" />
-            <x-text-input id="password" class="block mt-1 w-full" type="password" name="password"
+            <x-inputs.input-label :value="__('Password')" />
+            <x-inputs.text-input id="password" class="block mt-1 w-full" type="password" name="password"
                 autocomplete="current-password" placeholder="••••••••"/>
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+            <x-inputs.input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
         <!-- Remember Me -->
@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <x-primary-button class="w-full">
+        <x-buttons.primary-button class="w-full">
             {{ __('Log in') }}
         </x-primary-button>
     </form>

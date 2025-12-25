@@ -1,6 +1,6 @@
 <x-guest-layout>
     {{-- Header --}}
-    <x-input-header title="Create a New Account" text="Sign up to start planning your meals" class="font-bold"/>
+    <x-inputs.input-header title="Create a New Account" text="Sign up to start planning your meals" class="font-bold"/>
 
     <!-- Navigation -->
     <div
@@ -14,40 +14,40 @@
 
         <!-- Name -->
         <div>
-            <x-input-label for="name" :value="__('Username')" />
-            <x-text-input placeholder="John Shon" id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')"
+            <x-inputs.input-label for="name" :value="__('Username')" />
+            <x-inputs.text-input placeholder="John Shon" id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')"
                 required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+            <x-inputs.input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
         <!-- Email Address -->
         <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input placeholder="name@example.com" id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
+            <x-inputs.input-label for="email" :value="__('Email')" />
+            <x-inputs.text-input placeholder="name@example.com" id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
                 required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            <x-inputs.input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
         <!-- Password -->
         <div>
-            <x-input-label for="password" :value="__('Password')" />
+            <x-inputs.input-label for="password" :value="__('Password')" />
 
-            <x-text-input placeholder="••••••••" id="password" class="block mt-1 w-full" type="password" name="password" required
+            <x-inputs.text-input placeholder="••••••••" id="password" class="block mt-1 w-full" type="password" name="password" required
                 autocomplete="new-password" />
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+            <x-inputs.input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
         <!-- Confirm Password -->
         <div>
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-            <x-text-input placeholder="Repeat password" id="password_confirmation" class="block mt-1 w-full" type="password"
+            <x-inputs.input-label for="password_confirmation" :value="__('Confirm Password')" />
+            <x-inputs.text-input placeholder="Repeat password" id="password_confirmation" class="block mt-1 w-full" type="password"
                 name="password_confirmation" required autocomplete="new-password" />
 
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+            <x-inputs.input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
 
-        <x-primary-button class="w-full">
+        <x-buttons.primary-button class="w-full">
             {{ __('Register') }}
         </x-primary-button>
     </form>
