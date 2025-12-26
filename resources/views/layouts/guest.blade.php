@@ -17,27 +17,29 @@
         class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-backgorund dark:bg-backgorund-dark gap-5">
 
         {{-- logo --}}
-        <div class="flex flex-row items-center justify-center gap-5 my-5">
-            <x-svg.application-logo
-                class="w-16 h-16 fill-current bg-primary dark:bg-primary-dark text-backgorund-light dark:text-backgorund-dark rounded-3xl" />
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-5 my-5">
+            <x-icons.application-logo
+                class="flex items-center justify-center w-16 h-16 fill-current bg-primary dark:bg-primary-dark text-backgorund-light dark:text-backgorund-dark rounded-xl" width="36" height="36"/>
 
             {{-- tittle --}}
-            <div>
-                <x-text-h1 class="lg:text-4xl">Mealify</x-text-h1>
-                <p>Plan your meals easily and nutritionally balanced</p>
+            <div class="text-center sm:text-start">
+                <x-text-h1 class="lg:text-6xl mb-2">Mealify</x-text-h1>
+                <div class="max-w-xs sm:max-w-none">
+                    <p class="w-full">Plan your meals easily and nutritionally balanced</p>
+                </div>
             </div>
         </div>
 
         {{-- Card --}}
         <div
-            class="w-full sm:max-w-md px-6 py-4 bg-backgorund-lightv2 dark:bg-backgorund-dark shadow-lg overflow-hidden sm:rounded-lg dark:border dark:border-neutral-700">
+            class="w-4/5 sm:max-w-md px-6 py-4 bg-backgorund-lightv2 dark:bg-backgorund-dark shadow-lg overflow-hidden rounded-2xl dark:border dark:border-neutral-700">
             {{ $slot }}
         </div>
 
         {{-- Navigation return to the hompage --}}
         <div
             class="w-full flex flex-row justify-center gap-2 mb-5 font-bold text-sm text-primary dark:text-primary-dark hover:text-primary dark:hover:text-primary-dark hover:underline underline-offset-4">
-            <x-svg.arrow-left class="w-5" />
+            <x-icons.arrow-left class="w-5" />
             <a href="/">
                 Return to the homepage
             </a>

@@ -17,7 +17,11 @@
     <x-home.navbar />
     <main
         class="bg-backgorund-light dark:bg-backgorund-dark text-secondary dark:text-secondary-dark flex min-h-screen flex-col w-full pt-16 transition-all duration-300">
-    <x-home.hero-section />
+        <x-home.hero-section />
+        <x-home.feature-section />
+        <x-home.how-it-works-section />
+        <x-home.recipes-section />
+        <x-home.cta-section />
     </main>
 </body>
 

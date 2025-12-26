@@ -11,7 +11,7 @@
   }
 
   section {
-    @apply mx-5 sm:mx-10 lg:mx-20;
+    @apply mx-5 sm:mx-10 lg:mx-20 py-20;
   }
 
   h1,

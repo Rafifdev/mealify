@@ -5,7 +5,7 @@
         {{ $title }}
     </h1>
 
-    <p class="block font-medium text-sm text-secondary dark:text-secondary-dark">
+    <p class="block font-medium text-secondary dark:text-secondary-dark">
         {{ $text }}
     </p>
 </div>

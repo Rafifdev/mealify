@@ -28,6 +28,19 @@ export default {
                     dark: "#171717",
                     darkv2: "#242424",
                 },
+                border: {
+                    DEFAULT: "#d4d4d4",
+                    dark: "#4b5563",
+                },
+            },
+            keyframes: {
+                float: {
+                    "0%, 100%": { transform: "translateY(0)" },
+                    "50%": { transform: "translateY(-8px)" },
+                },
+            },
+            animation: {
+                float: "float 2s ease-in-out infinite",
             },
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
