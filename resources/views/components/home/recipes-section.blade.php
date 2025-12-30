@@ -21,11 +21,11 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mb-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mb-12">
         <x-cards.recipe-card />
         <x-cards.recipe-card />
-        <x-cards.recipe-card />
-        <x-cards.recipe-card />
+        <x-cards.recipe-card class="hidden sm:block"/>
+        <x-cards.recipe-card class="hidden sm:block"/>
     </div>
 
     <div class="text-center">

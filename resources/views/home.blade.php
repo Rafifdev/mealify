@@ -22,6 +22,7 @@
         <x-home.how-it-works-section />
         <x-home.recipes-section />
         <x-home.cta-section />
+        <x-home.footer />
     </main>
 </body>
 
