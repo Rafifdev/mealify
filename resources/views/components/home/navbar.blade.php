@@ -18,20 +18,30 @@
         {{-- Button --}}
         <div class="flex items-center justify-center gap-1 lg:gap-3">
             <x-buttons.toggle-theme />
-            <a href="{{ route('login') }}">
-                <x-buttons.secondary-button class="hidden md:block">
-                    {{ __('Log in') }}
-                </x-buttons.secondary-button>
-            </a>
+            @auth
+                <a href="{{ route('login') }}">
+                    <x-buttons.secondary-button class="hidden md:block">
+                        Dashboard
+                    </x-buttons.secondary-button>
+                </a>
+            @endauth
 
-            <a href="{{ route('register') }}">
-                <x-buttons.primary-button class="hidden md:block bg-primary dark:bg-primary-dark">
-                    <div class="flex items-center justify-center gap-4">
-                        <x-icons.login-svg class="text-secondary-dark dark:text-secondary" />
-                        {{ __('Register') }}
-                    </div>
-                </x-buttons.primary-button>
-            </a>
+            @guest
+                <a href="{{ route('login') }}">
+                    <x-buttons.secondary-button class="hidden md:block">
+                        {{ __('Login') }}
+                    </x-buttons.secondary-button>
+                </a>
+
+                <a href="{{ route('register') }}">
+                    <x-buttons.primary-button class="hidden md:block bg-primary dark:bg-primary-dark">
+                        <div class="flex items-center justify-center gap-4">
+                            <x-icons.login-svg class="text-secondary-dark dark:text-secondary" />
+                            {{ __('Register') }}
+                        </div>
+                    </x-buttons.primary-button>
+                </a>
+            @endguest
 
             {{-- button Mobile --}}
             <button class="block md:hidden text-secondary dark:text-secondary-dark" id="menu-btn">
@@ -43,7 +53,8 @@
 
     {{-- Mobile nav --}}
     <div class="hidden md:hidden py-4 w-full border-t border-border dark:border-border-dark z-50" id="mobile-menu">
-        <div class="flex flex-col items-start justify-start gap-4 mx-5 sm:mx-10 text-secondary dark:text-secondary-dark">
+        <div
+            class="flex flex-col items-start justify-start gap-4 mx-5 sm:mx-10 text-secondary dark:text-secondary-dark">
             <a href="#features" class="text-muted-foreground hover:text-foreground transition-colors py-2">
                 Fitur
             </a>
